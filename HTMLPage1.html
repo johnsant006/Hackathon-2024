@@ -1,0 +1,45 @@
+﻿<!--DTD or Document type declaration which informs the web-browser about the version of HTML being used (in this case HTML5) and ensures document is interpreted correctly by modern web browsers-->
+<!DOCTYPE html>
+<!--lang attribute specifies the language of the documents content, helps searchengines and browsers to determine the language, helping SEO or search engine optemization-->
+<!--xmlns attribute specifies the XML namespace for the document. This is the namespace for the XHTML Extensible Hypertext Markup Language-->
+<!--this is included to ensure proper validation of the document structure. (HTML5 doesnt require XHTML syntax)-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!--head is an element in HTML that is a container for metadata and other head elements which provide information about the document and instructions to the browser on how to handle it-->
+<head>
+    <!--one of the elements in the head container that uses the meta element to specify character encoding for the web browser-->
+    <!--this attribute specifies the character encoding for the document. UTF-8 is a widely used character encoding that supports a wide range of characters from various languages and scripts-->
+    <!--the / is a self closing tag indicating that it doesnt have any content and closes itself-->
+    <meta charset="utf-8" />
+    <!--places text in the browsers title bar aka tab when webpage is loaded-->
+    <title>Contact List</title>
+    <!--link element inside head container used to link external sources to the HTML document-->
+    <!--rel attribute specifies the relationship between the current document and the linked resource. This resource is a stylesheet-->
+    <!--href attribute specifies the URL of the linked resource. This is the path to the stylesheet file-->
+    <!--webbrowser fetches the styles.css file and applies its styles to the HTML document where this line is located. Applies CSS styles to the HTML document externally-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!--body is an element in HTML that is a container for the visible content of the document-->
+<!--it contains the content that is directly visible to the user-->
+<body>
+    <!--h1 is an element in HTML that is used to define the most important heading in the document. The numbers after change the importance-->
+    <h1>Contact List</h1>
+    <!--div is an element in HTML that is used as a container for other HTML elements. It is used to group elements together and apply styles to them using CSS-->
+    <div id="contacts">
+        <!--Contacts will be dynamically added here-->
+    </div>
+    <!--form is an element that collects user input. id is an attribute that provides unique identifier for the form, which can be useful for styling with CSS.-->
+    <form id="addContactForm">
+        <!--input is an element that is used to create a user input field. The type attribute specifies the type of input. The id attribute provides a unique identifier for the input field, which can be useful for styling with CSS.-->
+        <!--The placeholder attribute specifies the placeholder text that is displayed in the input field when it is empty.-->
+        <!--required attribute specifies that the input field must be filled out before submitting the form.-->
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="phone" placeholder="Phone" required>
+        <input type="text" id="email" placeholder="Email" required>
+        <input type="text" id="address" placeholder="Address" required>
+    </form>
+    <!--script is an element that is used to define client-side JavaScript. It is used to embed or reference JavaScript code in an HTML document. The src attribute specifies the URL of an external script file. This is the path to the JavaScript file. The web browser fetches the script.js file and executes its code in the context of the HTML document where this line is located.
+    <!--This allows the JavaScript code to interact with the HTML document and modify its content dynamically. The defer attribute specifies that the script should be executed after the document has been parsed, allowing the HTML content to be fully loaded before the JavaScript code is executed.-->
+    <!--This can improve performance by preventing the JavaScript code from blocking the rendering of the HTML content. The / is a self-closing tag indicating that it doesn't have any content and closes itself.-->
+    <script src="script.js"></script>
+</body>
+</html>

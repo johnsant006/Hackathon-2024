@@ -1,0 +1,45 @@
+/* Set the font family for the entire document */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding around the content */
+}
+
+/* Center align the heading */
+h1 
+{
+    text-align: center;
+}
+
+/* Add margin to the top of the contacts section */
+#contacts
+{
+    margin-top: 20px;
+}
+
+/* Style for each contact */
+.contact 
+{
+    border-bottom: 1px solid #ccc; /* Add border below each contact */
+    padding: 10px 0; /* Add padding above and below each contact */
+}
+
+/* Style for the form */
+form
+{
+    margin-top: 20px; /* Add margin to the top of the form */
+    text-align: center; /* Center align the form */
+}
+
+/* Style for text input fields */
+input[type="text"]
+{
+    padding: 8px; /* Add padding to the text input */
+    margin-right: 10px; /* Add margin to the right of the text input */
+}
+
+/* Style for buttons */
+button 
+{
+    padding: 8px 20px; /* Add padding to the button */
+}
